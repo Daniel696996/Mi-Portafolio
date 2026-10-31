@@ -1,0 +1,9 @@
+:root {
+  --texto-principal: "Montserrat", sans-serif;
+  --titulos: "Cinzel", serif;
+  --fuente-codigo: "Fira Code", monospace;
+}
+
+body {
+  font-family: var(--texto-principal);
+}
