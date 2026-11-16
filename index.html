@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/output.css">
 </head>
-<body>
+<body class="bg-fondo text-[#f3f2f7] font-sans text-base leading-relaxed m-0">
     <header id="inicio" class="relative overflow-hidden bg-encabezado border-b-[3px] border-moradoOscuro py-9 px-6">
         <div class="absolute inset-0 bg-[url('../img/header.png')] bg-cover bg-center opacity-25 pointer-events-none"></div>
         <div class="absolute inset-0 bg-gradient-to-b from-encabezado/60 via-encabezado/75 to-encabezado pointer-events-none"></div>
@@ -55,72 +55,122 @@
         </p>
     </header>
 
-    <main class="contenido">
-        <section class="seccion" id="sobre-mi">
-            <h3>Sobre mí</h3>
-            <div class="tarjeta">
+    <main class="max-w-[62.5rem] mx-auto my-9 px-6 space-y-6">
+        <section id="sobre-mi" class="bg-seccion border border-borde rounded-xl p-6 sm:p-8 scroll-mt-5 transition-colors hover:border-moradoOscuro/60">
+            <h3 class="text-morado text-2xl font-bold mb-3">Sobre mí</h3>
+            <div class="bg-tarjeta/80 border border-borde/50 p-4 rounded-lg text-[#c9c9c9]">
                 <p>Soy un joven de 19 años, apasionado por la programación y el desarrollo de software. Desde pequeño me interesa la tecnología, he hecho pequeños proyectos por cuenta propia siendo un aficionado y estoy siempre en busca de aprender nuevas habilidades y formarme como profesional.</p>
             </div>
 
-            <h3 class="titulo-secundario">Mis estudios</h3>
-            <ul class="lista">
-                <li>Técnico en Programación de Software <strong>SENA, 2024</strong></li>
-                <li>Tecnólogo en Desarrollo de Inteligencia Artificial <strong>Universidad Pontificia Bolivariana, 2025</strong></li>
+            <h3 class="text-morado text-xl font-bold mt-6 mb-3">Mis estudios</h3>
+            <ul class="list-disc pl-6 space-y-2 text-[#c9c9c9]">
+                <li>Técnico en Programación de Software <strong class="text-white">SENA, 2024</strong></li>
+                <li>Tecnólogo en Desarrollo de Inteligencia Artificial <strong class="text-white">Universidad Pontificia Bolivariana, 2025</strong></li>
             </ul>
         </section>
 
-        <section class="seccion" id="habilidades">
-            <h3>Habilidades</h3>
-            <ul class="etiquetas">
-                <li>Liderazgo</li>
-                <li>Programación en JavaScript</li>
-                <li>Comunicación asertiva</li>
-                <li>Inteligencia artificial</li>
-                <li>Automatización</li>
+        <section id="habilidades" class="bg-seccion border border-borde rounded-xl p-6 sm:p-8 scroll-mt-5 transition-colors hover:border-moradoOscuro/60">
+            <h3 class="text-morado text-2xl font-bold mb-3">Habilidades</h3>
+            <ul class="flex flex-wrap gap-2 list-none p-0 m-0">
+                <li class="px-3.5 py-1.5 bg-etiqueta border border-borde rounded-full text-sm text-[#f3f2f7]">Liderazgo</li>
+                <li class="px-3.5 py-1.5 bg-etiqueta border border-borde rounded-full text-sm text-[#f3f2f7]">Programación en JavaScript</li>
+                <li class="px-3.5 py-1.5 bg-etiqueta border border-borde rounded-full text-sm text-[#f3f2f7]">Comunicación asertiva</li>
+                <li class="px-3.5 py-1.5 bg-etiqueta border border-borde rounded-full text-sm text-[#f3f2f7]">Inteligencia artificial</li>
+                <li class="px-3.5 py-1.5 bg-etiqueta border border-borde rounded-full text-sm text-[#f3f2f7]">Automatización</li>
             </ul>
 
-            <h3 class="titulo-secundario">Tecnologías</h3>
-            <ul class="etiquetas tecnologias">
-                <li><i class="devicon-html5-plain" aria-hidden="true"></i><span>HTML</span></li>
-                <li><i class="devicon-css3-plain" aria-hidden="true"></i><span>CSS</span></li>
-                <li><i class="devicon-javascript-plain" aria-hidden="true"></i><span>JavaScript</span></li>
-                <li><i class="devicon-python-plain" aria-hidden="true"></i><span>Python</span></li>
-            </ul>
-        </section>
-
-        <section class="seccion" id="proyectos">
-            <h3>Mis proyectos</h3>
-            <ul class="proyectos">
-                <li>
-                    <h4>Emberá Agency</h4>
-                    <p>Página web para una agencia de viajes.</p>
-                    <a href="https://daniel696996.github.io/Embera-Agency/" target="_blank" rel="noopener noreferrer">Ver proyecto ↗</a>
+            <h3 class="text-morado text-xl font-bold mt-6 mb-3">Tecnologías</h3>
+            <ul class="flex flex-wrap gap-3 list-none p-0 m-0">
+                <li class="flex items-center gap-2 px-4 py-2 bg-etiqueta border border-borde rounded-full text-sm text-[#f3f2f7] transition-all duration-300 hover:-translate-y-1 hover:border-morado hover:text-white hover:shadow-[0_0_15px_rgba(185,156,255,0.45)] cursor-default">
+                    <i class="devicon-html5-plain text-morado text-xl" aria-hidden="true"></i>
+                    <span>HTML</span>
                 </li>
-                <li>
-                    <h4>SCRUM Team</h4>
-                    <p>Actividad interactiva creada con JavaScript.</p>
-                    <a href="https://daniel696996.github.io/-SCRUM-Team/" target="_blank" rel="noopener noreferrer">Ver proyecto ↗</a>
+                <li class="flex items-center gap-2 px-4 py-2 bg-etiqueta border border-borde rounded-full text-sm text-[#f3f2f7] transition-all duration-300 hover:-translate-y-1 hover:border-morado hover:text-white hover:shadow-[0_0_15px_rgba(185,156,255,0.45)] cursor-default">
+                    <i class="devicon-css3-plain text-morado text-xl" aria-hidden="true"></i>
+                    <span>CSS</span>
                 </li>
-                <li>
-                    <h4>Rueda Libre</h4>
-                    <p>Página web para una empresa de bicicletas.</p>
-                    <a href="https://daniel696996.github.io/rueda-libre/" target="_blank" rel="noopener noreferrer">Ver proyecto ↗</a>
+                <li class="flex items-center gap-2 px-4 py-2 bg-etiqueta border border-borde rounded-full text-sm text-[#f3f2f7] transition-all duration-300 hover:-translate-y-1 hover:border-morado hover:text-white hover:shadow-[0_0_15px_rgba(185,156,255,0.45)] cursor-default">
+                    <i class="devicon-javascript-plain text-morado text-xl" aria-hidden="true"></i>
+                    <span>JavaScript</span>
+                </li>
+                <li class="flex items-center gap-2 px-4 py-2 bg-etiqueta border border-borde rounded-full text-sm text-[#f3f2f7] transition-all duration-300 hover:-translate-y-1 hover:border-morado hover:text-white hover:shadow-[0_0_15px_rgba(185,156,255,0.45)] cursor-default">
+                    <i class="devicon-python-plain text-morado text-xl" aria-hidden="true"></i>
+                    <span>Python</span>
                 </li>
             </ul>
         </section>
 
-        <section class="seccion" id="contacto">
-            <h3>Contáctame</h3>
-            <ul class="lista contacto">
-                <li>Correo: <a href="mailto:danielpabon899@gmail.com">danielpabon899@gmail.com</a></li>
-                <li>Teléfono: <a href="tel:+573021090444">+57 302 109 0444</a></li>
-                <li>WhatsApp: <a href="https://wa.me/573057677127" target="_blank" rel="noopener noreferrer">+57 305 767 7127</a></li>
-                <li>GitHub: <a href="https://github.com/daniel696996" target="_blank" rel="noopener noreferrer"><i class="devicon-github-original" aria-hidden="true"></i> daniel696996</a></li>
+        <section id="proyectos" class="bg-seccion border border-borde rounded-xl p-6 sm:p-8 scroll-mt-5 transition-colors hover:border-moradoOscuro/60">
+            <h3 class="text-morado text-2xl font-bold mb-4">Mis proyectos</h3>
+            <ul class="grid grid-cols-1 md:grid-cols-3 gap-5 list-none p-0 m-0">
+                <li class="group bg-tarjeta border border-borde rounded-xl overflow-hidden flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:border-morado hover:shadow-[0_0_20px_rgba(98,69,142,0.35)]">
+                    <div>
+                        <div class="relative h-36 w-full overflow-hidden bg-encabezado">
+                            <img src="img/proyectos/embera.png" alt="Vista previa de Emberá Agency" class="w-full h-full object-cover opacity-85 transition-transform duration-500 group-hover:scale-105 group-hover:opacity-100">
+                            <div class="absolute inset-0 bg-gradient-to-t from-tarjeta via-transparent to-transparent"></div>
+                        </div>
+                        <div class="p-4 pb-2">
+                            <h4 class="text-white text-lg font-bold mb-1">Emberá Agency</h4>
+                            <p class="text-[#c9c9c9] text-sm leading-snug">Página web para una agencia de viajes.</p>
+                        </div>
+                    </div>
+                    <div class="p-4 pt-2">
+                        <a href="https://daniel696996.github.io/Embera-Agency/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-sm font-bold text-morado hover:text-white transition-colors">
+                            Ver proyecto <span>↗</span>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="group bg-tarjeta border border-borde rounded-xl overflow-hidden flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:border-morado hover:shadow-[0_0_20px_rgba(98,69,142,0.35)]">
+                    <div>
+                        <div class="relative h-36 w-full overflow-hidden bg-encabezado">
+                            <img src="img/proyectos/scrum.png" alt="Vista previa de SCRUM Team" class="w-full h-full object-cover opacity-85 transition-transform duration-500 group-hover:scale-105 group-hover:opacity-100">
+                            <div class="absolute inset-0 bg-gradient-to-t from-tarjeta via-transparent to-transparent"></div>
+                        </div>
+                        <div class="p-4 pb-2">
+                            <h4 class="text-white text-lg font-bold mb-1">SCRUM Team</h4>
+                            <p class="text-[#c9c9c9] text-sm leading-snug">Actividad interactiva creada con JavaScript.</p>
+                        </div>
+                    </div>
+                    <div class="p-4 pt-2">
+                        <a href="https://daniel696996.github.io/-SCRUM-Team/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-sm font-bold text-morado hover:text-white transition-colors">
+                            Ver proyecto <span>↗</span>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="group bg-tarjeta border border-borde rounded-xl overflow-hidden flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:border-morado hover:shadow-[0_0_20px_rgba(98,69,142,0.35)]">
+                    <div>
+                        <div class="relative h-36 w-full overflow-hidden bg-encabezado">
+                            <img src="img/proyectos/dark.gif" alt="Vista previa de Rueda Libre" class="w-full h-full object-cover opacity-85 transition-transform duration-500 group-hover:scale-105 group-hover:opacity-100">
+                            <div class="absolute inset-0 bg-gradient-to-t from-tarjeta via-transparent to-transparent"></div>
+                        </div>
+                        <div class="p-4 pb-2">
+                            <h4 class="text-white text-lg font-bold mb-1">Rueda Libre</h4>
+                            <p class="text-[#c9c9c9] text-sm leading-snug">Página web para una empresa de bicicletas.</p>
+                        </div>
+                    </div>
+                    <div class="p-4 pt-2">
+                        <a href="https://daniel696996.github.io/rueda-libre/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-sm font-bold text-morado hover:text-white transition-colors">
+                            Ver proyecto <span>↗</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contacto" class="bg-seccion border border-borde rounded-xl p-6 sm:p-8 scroll-mt-5 transition-colors hover:border-moradoOscuro/60">
+            <h3 class="text-morado text-2xl font-bold mb-3">Contáctame</h3>
+            <ul class="list-disc pl-6 space-y-2 text-[#c9c9c9]">
+                <li>Correo: <a href="mailto:danielpabon899@gmail.com" class="text-morado hover:text-white no-underline transition-colors">danielpabon899@gmail.com</a></li>
+                <li>Teléfono: <a href="tel:+573021090444" class="text-morado hover:text-white no-underline transition-colors">+57 302 109 0444</a></li>
+                <li>WhatsApp: <a href="https://wa.me/573057677127" target="_blank" rel="noopener noreferrer" class="text-morado hover:text-white no-underline transition-colors">+57 305 767 7127</a></li>
+                <li>GitHub: <a href="https://github.com/daniel696996" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-morado hover:text-white no-underline transition-colors"><i class="devicon-github-original text-morado text-xl" aria-hidden="true"></i> daniel696996</a></li>
             </ul>
         </section>
     </main>
 
-    <footer class="pie">
+    <footer class="py-4 px-6 bg-encabezado text-[#aaaaaa] text-center text-sm border-t border-borde/40">
         <p>Jose Daniel Pabon | Portafolio</p>
         <p>&copy; 2026</p>
     </footer>
