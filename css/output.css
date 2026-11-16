@@ -773,6 +773,10 @@ video {
   border-top-width: 1px;
 }
 
+.border-b-4 {
+  border-bottom-width: 4px;
+}
+
 .border-borde {
   --tw-border-opacity: 1;
   border-color: rgb(57 57 67 / var(--tw-border-opacity, 1));
